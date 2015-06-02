@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Use the chrome.storage API to store, retrieve, and track changes to user data",
-    version: "1.0.0",
+    version: "1.0.1",
     name: "particle4dev:chrome-local-storage",
     git: "https://github.com/particles4dev-team/cordova-plugin-chromeLocalStorage"
 });
@@ -34,7 +34,7 @@ Package.on_use(function(api) {
 
     // import packages
     api.use(['underscore'], both);
-    api.use('particle4dev:rsvpjs@3.0.18', 'client');
+    api.use(['particle4dev:rsvpjs@3.0.18', 'reactive-var'], 'client');
     
 
     // add files
